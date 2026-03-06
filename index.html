@@ -129,7 +129,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(253,248,243,.95);backdrop-f
 /* FAQ */
 .faq{background:var(--warm-white)}
 .faq-item{border-bottom:1px solid rgba(139,111,94,.08)}
-.faq-q{width:100%;background:none;border:none;padding:1.1rem 0;font-family:'DM Sans',sans-serif;font-size:.92rem;font-weight:600;color:var(--charcoal);text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:48px}
+.faq-q{width:100%;background:none;border:none;padding:1.1rem 0;font-family:'DM Sans',sans-serif;font-size:.92rem;font-weight:600;color:var(--charcoal);text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:48px;-webkit-appearance:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .faq-q:hover{color:var(--clay)}
 .faq-icon{width:26px;height:26px;border-radius:50%;background:rgba(139,111,94,.06);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;color:var(--clay);transition:all .3s}
 .faq-item.open .faq-icon{background:var(--clay);color:#fff;transform:rotate(45deg)}
@@ -347,7 +347,7 @@ footer a:hover{color:#fff}
 </div>
 
 <script>
-document.querySelectorAll('.faq-q').forEach(b=>{b.addEventListener('click',()=>{const i=b.parentElement,a=i.querySelector('.faq-a'),o=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>{x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight=null;x.querySelector('.faq-q').setAttribute('aria-expanded','false')});if(!o){i.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';b.setAttribute('aria-expanded','true')}})});
+document.querySelectorAll('.faq-q').forEach(function(b){b.setAttribute('type','button');function toggle(){var i=b.parentElement,a=i.querySelector('.faq-a'),o=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(x){x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight=null;x.querySelector('.faq-q').setAttribute('aria-expanded','false')});if(!o){i.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';b.setAttribute('aria-expanded','true')}}b.addEventListener('click',function(e){e.preventDefault();toggle()})});
 </script>
 </body>
 </html>
