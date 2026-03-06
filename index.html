@@ -87,9 +87,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(253,248,243,.95);backdrop-f
 
 /* ABOUT */
 .about{background:var(--warm-white)}
-.about-photo{width:100%;max-width:320px;aspect-ratio:4/5;border-radius:20px;margin:0 auto 1.5rem;overflow:hidden;box-shadow:0 12px 40px rgba(107,81,66,.1);background:linear-gradient(160deg,#D4C4B5,#B89878);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem}
-.about-photo svg{opacity:.45}
-.about-photo span{color:rgba(255,255,255,.55);font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.about-photo{width:100%;max-width:320px;aspect-ratio:4/5;border-radius:20px;margin:0 auto 1.5rem;overflow:hidden;box-shadow:0 12px 40px rgba(107,81,66,.1)}
 .about h2 em{font-style:italic;color:var(--clay)}
 .about-text{font-size:.92rem;color:var(--text-light);line-height:1.75;margin-bottom:.8rem}
 .credentials{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
@@ -251,7 +249,7 @@ footer a:hover{color:#fff}
 <section class="about" id="about" aria-labelledby="about-t">
   <div class="container">
     <div class="about-grid">
-      <div class="about-photo" role="img" aria-label="Photo of Ansie Lima"><svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 00-16 0"/></svg><span>Ansie's photo</span></div>
+      <div class="about-photo"><picture><source srcset="ansie-lima-midwife-2.webp" type="image/webp"><img src="ansie-lima-midwife-2.jpg" alt="Ansie Lima, registered midwife, holding a newborn baby" width="640" height="860" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;border-radius:20px"></picture></div>
       <div>
         <div class="section-label">Your Midwife</div>
         <h2 class="section-title" id="about-t">Meet <em>Ansie Lima</em></h2>
