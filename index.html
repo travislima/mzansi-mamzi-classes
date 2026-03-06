@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Mzansi Mamzi — Antenatal Classes with Midwife Ansie Lima | Port Elizabeth</title>
 <meta name="description" content="3-week online antenatal classes with registered midwife Ansie Lima. Weekly emails + live Friday group sessions. Small groups, medical aid claimable. Based in Port Elizabeth, available nationwide.">
 <meta name="keywords" content="antenatal classes, antenatal classes port elizabeth, antenatal classes PE, antenatal classes gqeberha, midwife port elizabeth, pregnancy classes online, antenatal education south africa, birth preparation, midwife ansie lima">
@@ -17,6 +17,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mzansi Mamzi — Antenatal Classes with Midwife Ansie Lima">
 <meta name="twitter:description" content="3-week antenatal programme with a registered midwife. Email content + live Friday sessions.">
+<meta property="og:image" content="https://mzansimamzi.co.za/og-image.jpg">
+<meta name="twitter:image" content="https://mzansimamzi.co.za/og-image.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthBusiness","name":"Mzansi Mamzi","description":"Antenatal classes and midwifery services by registered midwife Ansie Lima","url":"https://mzansimamzi.co.za","address":{"@type":"PostalAddress","addressLocality":"Port Elizabeth","addressRegion":"Eastern Cape","addressCountry":"ZA"},"founder":{"@type":"Person","name":"Ansie Lima","jobTitle":"Registered Midwife & Doula"},"sameAs":["https://instagram.com/mzansi.mamzi"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"Mzansi Mamzi 3-Week Antenatal Programme","description":"A 3-week antenatal education programme covering pregnancy wellness, birth preparation, and newborn care.","provider":{"@type":"Organization","name":"Mzansi Mamzi"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"Online","startDate":"2026-03-29","duration":"P3W","instructor":{"@type":"Person","name":"Ansie Lima"},"offers":{"@type":"Offer","price":"750","priceCurrency":"ZAR","availability":"https://schema.org/LimitedAvailability"}}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -158,6 +160,7 @@ footer a:hover{color:#fff}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 /* animations removed for reliability */
+@media(prefers-reduced-motion:reduce){.dot{animation:none}}
 
 /* DESKTOP */
 @media(min-width:768px){
@@ -317,6 +320,7 @@ footer a:hover{color:#fff}
       <div class="faq-item"><button class="faq-q" aria-expanded="false">I'm early/late in my pregnancy &#8212; is this for me?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">The programme is valuable at any stage. Whether you're in your first trimester or approaching your due date, the content covers the full journey. Most moms find it especially helpful in the second and third trimester.</div></div></div>
       <div class="faq-item"><button class="faq-q" aria-expanded="false">Can my partner join the Friday sessions?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Absolutely! Partners are welcome. Birth is a shared experience, and having your partner hear the same information helps you feel like a team going into it.</div></div></div>
       <div class="faq-item"><button class="faq-q" aria-expanded="false">What do I need to participate?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Just an email address and a device with internet access. Content comes via email, Friday sessions happen on Zoom (free to use). No apps to install, no logins to remember.</div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What if I need to cancel?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Full refund if you let us know before the group start date. Once the programme begins, we're unable to offer refunds as your spot has been held in our small group. If you have any concerns, just reach out &#8212; we're always happy to chat.</div></div></div>
     </div>
   </div>
 </section>
@@ -331,7 +335,7 @@ footer a:hover{color:#fff}
 
 <footer role="contentinfo">
   <div class="container">
-    <div class="footer-links"><a href="https://instagram.com/mzansi.mamzi" target="_blank" rel="noopener">Instagram</a><a href="/cdn-cgi/l/email-protection#84e5eaf7ede1c4e9fee5eaf7ede9e5e9feedaae7ebaafee5">Email</a></div>
+    <div class="footer-links"><a href="https://instagram.com/mzansi.mamzi" target="_blank" rel="noopener">Instagram</a><a href="mailto:hello@mzansimamzi.co.za">Email</a></div>
     <p>&copy; 2026 Mzansi Mamzi. All rights reserved.<br>Ansie Lima &#8212; Registered Midwife &amp; Doula, Port Elizabeth</p>
   </div>
 </footer>
@@ -341,6 +345,8 @@ footer a:hover{color:#fff}
   <a href="#" class="sticky-cta-btn">Reserve Your Spot</a>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 document.querySelectorAll('.faq-q').forEach(b=>{b.addEventListener('click',()=>{const i=b.parentElement,a=i.querySelector('.faq-a'),o=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>{x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight=null;x.querySelector('.faq-q').setAttribute('aria-expanded','false')});if(!o){i.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';b.setAttribute('aria-expanded','true')}})});
-const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add(
+</script>
+</body>
+</html>
