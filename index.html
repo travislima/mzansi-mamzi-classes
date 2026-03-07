@@ -350,7 +350,7 @@ footer a:hover{color:#fff}
 
 <footer role="contentinfo">
   <div class="container">
-    <div class="footer-links"><a href="https://instagram.com/mzansi.mamzi" target="_blank" rel="noopener">Instagram</a><a href="mailto:ansielima@gmail.com">Email</a></div>
+    <div class="footer-links"><a href="https://instagram.com/mzansi.mamzi" target="_blank" rel="noopener">Instagram</a><a href="#regModal" onclick="event.preventDefault();document.getElementById('regModal').classList.add('active');document.body.style.overflow='hidden'">Contact Us</a></div>
     <p>&copy; 2026 Mzansi Mamzi. All rights reserved.<br>Ansie Lima &#8212; Registered Midwife &amp; Doula, Port Elizabeth</p>
   </div>
 </footer>
@@ -365,9 +365,9 @@ footer a:hover{color:#fff}
     <button class="modal-close" aria-label="Close" id="modalClose">&times;</button>
     <h2>Reserve Your Spot</h2>
     <p class="modal-sub">Fill in your details below, then you'll be taken to our secure payment page to complete your booking.</p>
-    <form id="regForm" action="https://formsubmit.co/ansielima@gmail.com" method="POST">
+    <form id="regForm" action="#" method="POST">
       <input type="hidden" name="_subject" value="New Mzansi Mamzi Registration!">
-      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_captcha" value="true">
       <input type="hidden" name="_next" id="regNext" value="https://pay.yoco.com/mzansi-mamsi?amount=10.00&reference=Antenatal-Classes-Group1">
       <input type="text" name="_honey" style="display:none">
       <div class="form-group">
@@ -393,6 +393,9 @@ footer a:hover{color:#fff}
 </div>
 
 <script>
+/* Set form action via JS to hide email from scrapers */
+(function(){var p=['ansielima','gmail.com'];document.getElementById('regForm').setAttribute('action','https://formsubmit.co/'+p[0]+'@'+p[1])})();
+
 document.querySelectorAll('.faq-q').forEach(function(b){b.setAttribute('type','button');function toggle(){var i=b.parentElement,a=i.querySelector('.faq-a'),o=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(x){x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight=null;x.querySelector('.faq-q').setAttribute('aria-expanded','false')});if(!o){i.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';b.setAttribute('aria-expanded','true')}}b.addEventListener('click',function(e){e.preventDefault();toggle()})});
 
 /* Registration modal */
