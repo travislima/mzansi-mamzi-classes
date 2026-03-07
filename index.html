@@ -403,7 +403,7 @@ document.getElementById('modalClose').addEventListener('click',closeModal);
 modal.addEventListener('click',function(e){if(e.target===modal)closeModal()});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
 document.querySelectorAll('a[href="https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1"], a[href="#pricing"]').forEach(function(a){if(a.getAttribute('href')==='https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1'){a.addEventListener('click',openModal)}});
-document.getElementById('regForm').addEventListener('submit',function(){var btn=document.getElementById('regSubmit');btn.disabled=true;btn.textContent='Submitting\u2026';var fullName=document.getElementById('reg-name').value.trim();var firstName=fullName.split(' ')[0];var next=document.getElementById('regNext');next.value='https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1&firstName='+encodeURIComponent(firstName);});
+document.getElementById('regForm').addEventListener('submit',function(){var btn=document.getElementById('regSubmit');btn.disabled=true;btn.textContent='Submitting\u2026';var fullName=document.getElementById('reg-name').value.trim();var firstName=fullName.split(' ')[0];var next=document.getElementById('regNext');next.value='https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1&firstName='+encodeURIComponent(firstName)+'&redirectOnPaymentSuccess='+encodeURIComponent('https://mzansimamzi.co.za/thank-you.html');});
 </script>
 </body>
 </html>
