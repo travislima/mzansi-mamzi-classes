@@ -318,7 +318,7 @@ footer a:hover{color:#fff}
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Small, intimate group for real connection</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Invoice provided for medical aid claims</li>
       </ul>
-      <a href="https://pay.yoco.com/r/4kwvyv" class="btn-white">Reserve Your Spot &#8594;</a>
+      <a href="https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1" class="btn-white">Reserve Your Spot &#8594;</a>
       <p class="medaid">Most SA medical aids cover antenatal education. We provide a tax invoice with the correct codes &#8212; you claim back directly from your medical aid.</p>
     </div>
   </div>
@@ -357,7 +357,7 @@ footer a:hover{color:#fff}
 
 <div class="sticky-cta" role="complementary" aria-label="Sign up">
   <div class="sticky-cta-text"><div class="sticky-cta-price">R750</div><div class="sticky-cta-sub">3 weeks &middot; 12 spots left</div></div>
-  <a href="https://pay.yoco.com/r/4kwvyv" class="sticky-cta-btn">Reserve Your Spot</a>
+  <a href="https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1" class="sticky-cta-btn">Reserve Your Spot</a>
 </div>
 
 <div class="modal-overlay" id="regModal">
@@ -368,7 +368,7 @@ footer a:hover{color:#fff}
     <form id="regForm" action="https://formsubmit.co/travislima@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="New Mzansi Mamzi Registration!">
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://pay.yoco.com/r/4kwvyv">
+      <input type="hidden" name="_next" id="regNext" value="https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1">
       <input type="text" name="_honey" style="display:none">
       <div class="form-group">
         <label for="reg-name">Full Name</label>
@@ -402,8 +402,8 @@ function closeModal(){modal.classList.remove('active');document.body.style.overf
 document.getElementById('modalClose').addEventListener('click',closeModal);
 modal.addEventListener('click',function(e){if(e.target===modal)closeModal()});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
-document.querySelectorAll('a[href="https://pay.yoco.com/r/4kwvyv"], a[href="#pricing"]').forEach(function(a){if(a.getAttribute('href')==='https://pay.yoco.com/r/4kwvyv'){a.addEventListener('click',openModal)}});
-document.getElementById('regForm').addEventListener('submit',function(){var btn=document.getElementById('regSubmit');btn.disabled=true;btn.textContent='Submitting\u2026'});
+document.querySelectorAll('a[href="https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1"], a[href="#pricing"]').forEach(function(a){if(a.getAttribute('href')==='https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1'){a.addEventListener('click',openModal)}});
+document.getElementById('regForm').addEventListener('submit',function(){var btn=document.getElementById('regSubmit');btn.disabled=true;btn.textContent='Submitting\u2026';var fullName=document.getElementById('reg-name').value.trim();var firstName=fullName.split(' ')[0];var next=document.getElementById('regNext');next.value='https://pay.yoco.com/mzansi-mamsi?amount=750.00&reference=Antenatal-Classes-Group1&firstName='+encodeURIComponent(firstName);});
 </script>
 </body>
 </html>
