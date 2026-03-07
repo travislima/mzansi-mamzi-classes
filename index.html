@@ -144,6 +144,26 @@ footer a{color:rgba(255,255,255,.6)}
 footer a:hover{color:#fff}
 .footer-links{display:flex;justify-content:center;gap:1.5rem;margin-bottom:.8rem}
 
+/* REGISTRATION MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;z-index:100;background:rgba(58,51,48,.6);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.active{display:flex}
+.modal{background:var(--cream);border-radius:20px;width:100%;max-width:440px;max-height:90vh;overflow-y:auto;padding:2rem 1.5rem;position:relative;animation:fadeUp .3s ease-out}
+.modal-close{position:absolute;top:1rem;right:1rem;width:36px;height:36px;border-radius:50%;border:none;background:rgba(139,111,94,.08);color:var(--text);font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.modal-close:hover{background:rgba(139,111,94,.15)}
+.modal h2{font-size:1.5rem;margin-bottom:.3rem}
+.modal .modal-sub{font-size:.88rem;color:var(--text-light);margin-bottom:1.5rem;line-height:1.6}
+.form-group{margin-bottom:1rem}
+.form-group label{display:block;font-size:.8rem;font-weight:600;color:var(--charcoal);margin-bottom:.35rem}
+.form-group input,.form-group select{width:100%;padding:.75rem 1rem;border:1px solid rgba(139,111,94,.15);border-radius:12px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--text);background:#fff;transition:border-color .2s;-webkit-appearance:none}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:var(--clay)}
+.form-group input::placeholder{color:var(--text-lighter)}
+.form-group .optional{font-weight:400;color:var(--text-lighter);font-size:.72rem;margin-left:.3rem}
+.form-submit{width:100%;background:var(--clay);color:#fff;border:none;padding:1rem;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:600;cursor:pointer;transition:background .3s;min-height:52px;margin-top:.5rem}
+.form-submit:hover{background:var(--clay-dark)}
+.form-submit:disabled{opacity:.6;cursor:not-allowed}
+.form-secure{text-align:center;font-size:.72rem;color:var(--text-lighter);margin-top:.8rem;display:flex;align-items:center;justify-content:center;gap:.3rem}
+.form-secure svg{width:14px;height:14px}
+
 /* STICKY MOBILE CTA */
 .sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:60;background:rgba(253,248,243,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:.75rem 1.25rem;padding-bottom:max(.75rem,env(safe-area-inset-bottom));box-shadow:0 -2px 20px rgba(0,0,0,.06);display:flex;gap:.8rem;align-items:center}
 .sticky-cta-text{flex:1;min-width:0}
@@ -340,8 +360,50 @@ footer a:hover{color:#fff}
   <a href="https://pay.yoco.com/r/4kwvyv" class="sticky-cta-btn">Reserve Your Spot</a>
 </div>
 
+<div class="modal-overlay" id="regModal">
+  <div class="modal">
+    <button class="modal-close" aria-label="Close" id="modalClose">&times;</button>
+    <h2>Reserve Your Spot</h2>
+    <p class="modal-sub">Fill in your details below, then you'll be taken to our secure payment page to complete your booking.</p>
+    <form id="regForm" action="https://formsubmit.co/hello@mzansimamzi.co.za" method="POST">
+      <input type="hidden" name="_subject" value="New Mzansi Mamzi Registration!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://pay.yoco.com/r/4kwvyv">
+      <input type="text" name="_honey" style="display:none">
+      <div class="form-group">
+        <label for="reg-name">Full Name</label>
+        <input type="text" id="reg-name" name="name" placeholder="e.g. Sarah van der Merwe" required>
+      </div>
+      <div class="form-group">
+        <label for="reg-email">Email Address</label>
+        <input type="email" id="reg-email" name="email" placeholder="e.g. sarah@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="reg-phone">Phone / WhatsApp Number</label>
+        <input type="tel" id="reg-phone" name="phone" placeholder="e.g. 082 123 4567" required>
+      </div>
+      <div class="form-group">
+        <label for="reg-due">Estimated Due Date<span class="optional">(optional)</span></label>
+        <input type="date" id="reg-due" name="due_date">
+      </div>
+      <button type="submit" class="form-submit" id="regSubmit">Continue to Payment &#8594;</button>
+      <p class="form-secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Secure payment via Yoco</p>
+    </form>
+  </div>
+</div>
+
 <script>
 document.querySelectorAll('.faq-q').forEach(function(b){b.setAttribute('type','button');function toggle(){var i=b.parentElement,a=i.querySelector('.faq-a'),o=i.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(x){x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight=null;x.querySelector('.faq-q').setAttribute('aria-expanded','false')});if(!o){i.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';b.setAttribute('aria-expanded','true')}}b.addEventListener('click',function(e){e.preventDefault();toggle()})});
+
+/* Registration modal */
+var modal=document.getElementById('regModal');
+function openModal(e){e.preventDefault();modal.classList.add('active');document.body.style.overflow='hidden'}
+function closeModal(){modal.classList.remove('active');document.body.style.overflow=''}
+document.getElementById('modalClose').addEventListener('click',closeModal);
+modal.addEventListener('click',function(e){if(e.target===modal)closeModal()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
+document.querySelectorAll('a[href="https://pay.yoco.com/r/4kwvyv"], a[href="#pricing"]').forEach(function(a){if(a.getAttribute('href')==='https://pay.yoco.com/r/4kwvyv'){a.addEventListener('click',openModal)}});
+document.getElementById('regForm').addEventListener('submit',function(){var btn=document.getElementById('regSubmit');btn.disabled=true;btn.textContent='Submitting\u2026'});
 </script>
 </body>
 </html>
