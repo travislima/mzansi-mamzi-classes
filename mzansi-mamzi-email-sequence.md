@@ -3,8 +3,8 @@
 13 emails for the 3-week antenatal programme. To be loaded into MailerLite automation with the delays specified below.
 
 **Placeholders to replace before loading:**
-- `[DATE]` — Friday session date
-- `[TIME]` — Friday session time
+- `[DATE]` — Saturday session date
+- `[TIME]` — Saturday session time
 - `[INSERT LINK]` — Zoom session link
 - `[EMAIL]` — Ansie's contact email
 
@@ -23,11 +23,11 @@ I'm Ansie, a registered midwife and doula, and I'll be guiding you through the n
 **Your emails**
 Starting on your group's start date, you'll receive 2-3 short emails each week. Each one covers a specific topic, from what's happening in your body right now, to what birth actually looks like, to what those first days with your baby will be like. They're written to be read in about 5 minutes, whenever suits you.
 
-**Your Friday sessions**
-Every Friday for 3 weeks, we meet live on Zoom. This is where we go deeper into the week's topics, where you can ask me anything, and where you'll connect with the other moms in your group. Partners are welcome.
+**Your Saturday sessions**
+Every Saturday for 3 weeks, we meet live on Zoom. This is where we go deeper into the week's topics, where you can ask me anything, and where you'll connect with the other moms in your group. Partners are welcome.
 
 **What to do now**
-Nothing. Seriously. Just keep an eye on your inbox. Your first content email will arrive on your group's start date, and I'll send you a reminder before each Friday session with the Zoom link and details.
+Nothing. Seriously. Just keep an eye on your inbox. Your first content email will arrive on your group's start date, and I'll send you a reminder before each Saturday session with the Zoom link and details.
 
 I'm so glad you're here. This is going to be good.
 
@@ -72,10 +72,10 @@ Here's the thing: all of it is normal.
 **When to reach out for more support:**
 If you're feeling persistently low, anxious to the point where it's affecting your daily life, or having thoughts that frighten you, please talk to your midwife or doctor. Antenatal depression and anxiety are real, they're common, and they're treatable. There is no shame in asking for help.
 
-**Something to think about before Friday:**
+**Something to think about before Saturday:**
 What emotion has surprised you most during this pregnancy? (You don't have to share it with the group, but it's worth sitting with.)
 
-See you Friday,
+See you Saturday,
 Ansie
 
 ---
@@ -152,7 +152,7 @@ Contact your midwife or doctor if you experience:
 - Painful urination
 - Fluid leaking from the vagina
 
-**Something to think about before Friday:**
+**Something to think about before Saturday:**
 What's been your biggest physical niggle so far? Bring it to the session and let's troubleshoot together.
 
 Chat soon,
@@ -162,11 +162,11 @@ Ansie
 
 ## Email 4 — Reminder (Day 5)
 
-**Subject:** See you tomorrow! Friday session details
+**Subject:** See you tomorrow! Saturday session details
 
 Hi mama,
 
-Just a quick reminder that our first Friday session is tomorrow.
+Just a quick reminder that our first Saturday session is tomorrow.
 
 **When:** [DATE] at [TIME]
 **Where:** Zoom (link below)
@@ -201,7 +201,7 @@ Real birth? It's usually slower. Quieter. More powerful. And you're more capable
 - **It takes time.** First-time labour averages 12-18 hours (sometimes more, sometimes less). This isn't 12 hours of intense pain. Much of it is manageable, and the intense part is usually the shortest.
 - **Your body knows what to do.** You don't need to "learn" how to give birth. Your body already knows. What you need is to feel safe, supported, and informed enough to trust the process.
 - **You have choices.** Where you give birth, who's in the room, what positions you use, what pain relief you want. These are your decisions to make.
-- **Birth partners matter.** Having someone calm and supportive with you makes a measurable difference. This is why partners are welcome at our Friday sessions.
+- **Birth partners matter.** Having someone calm and supportive with you makes a measurable difference. This is why partners are welcome at our Saturday sessions.
 
 **The different ways birth can happen:**
 
@@ -218,10 +218,10 @@ Fear makes birth harder. Not because you're weak, but because fear triggers your
 
 That's what these classes are for. Not to tell you what to do, but to help you feel ready for whatever your birth looks like.
 
-**Something to think about before Friday:**
+**Something to think about before Saturday:**
 What are you most nervous about when it comes to birth? And where did that fear come from? (A story someone told you? Something you saw? A general feeling?) Let's talk about it.
 
-See you Friday,
+See you Saturday,
 Ansie
 
 ---
@@ -280,7 +280,7 @@ Here's something important: you don't have to lie in bed during labour. In fact,
 
 Your body will often tell you what position feels right. Listen to it.
 
-**Something to think about before Friday:**
+**Something to think about before Saturday:**
 Did anything in this email surprise you? What position do you think you'd feel most comfortable in? (There's no wrong answer, and you might change your mind in the moment, which is completely fine.)
 
 Talk soon,
@@ -330,10 +330,10 @@ Know what's available. Ask questions. The right question is always: "Is my baby 
 
 You have the right to informed consent. Nobody should do anything to you without explaining what, why, and getting your agreement (except in a true emergency).
 
-**Something to think about before Friday:**
+**Something to think about before Saturday:**
 What are your instincts telling you about pain relief? What do you think you'd like to try first? (Remember, you can change your mind at any point during labour.)
 
-See you Friday,
+See you Saturday,
 Ansie
 
 ---
@@ -344,7 +344,7 @@ Ansie
 
 Hi mama,
 
-Quick heads-up that our Week 2 Friday session is tomorrow.
+Quick heads-up that our Week 2 Saturday session is tomorrow.
 
 **When:** [DATE] at [TIME]
 **Where:** Zoom
@@ -390,8 +390,8 @@ You cannot spoil a newborn. Holding them, responding to their cries, feeding on 
 - To feel safe and held
 - That's pretty much it
 
-**Something to think about before Friday:**
-What's your biggest concern about those first days at home with your baby? Let's make sure we cover it on Friday.
+**Something to think about before Saturday:**
+What's your biggest concern about those first days at home with your baby? Let's make sure we cover it on Saturday.
 
 Chat soon,
 Ansie
@@ -450,10 +450,10 @@ When baby is fussy and it's not hunger or a nappy change, try:
 **Colic:**
 Some babies cry for extended periods (3+ hours) for no apparent reason, often in the evening. This is called colic. It's not caused by anything you're doing wrong. It usually starts around 2-3 weeks and peaks around 6 weeks. It's exhausting and distressing. If you're dealing with this, you are not failing. Ask for help, take breaks, and know that it passes.
 
-**Something to think about before Friday:**
+**Something to think about before Saturday:**
 What questions do you have about feeding? Whether you're planning to breastfeed, formula-feed, or you're not sure yet, bring your questions.
 
-See you Friday,
+See you Saturday,
 Ansie
 
 ---
@@ -513,8 +513,8 @@ If this sounds like you, please reach out. To your midwife, your doctor, your pa
 - **Get outside.** Even a short walk around the block. Fresh air and sunlight help everything.
 - **Be kind to yourself.** You're learning something completely new. Give yourself the same grace you'd give a friend.
 
-**Something to think about before Friday:**
-What support do you have lined up for after the birth? If the answer is "not much," let's talk about it on Friday.
+**Something to think about before Saturday:**
+What support do you have lined up for after the birth? If the answer is "not much," let's talk about it on Saturday.
 
 Take care of yourself, mama,
 Ansie
@@ -523,11 +523,11 @@ Ansie
 
 ## Email 12 — Reminder (Day 19)
 
-**Subject:** Our last Friday session is tomorrow
+**Subject:** Our last Saturday session is tomorrow
 
 Hi mama,
 
-This is it. Our last Friday session together.
+This is it. Our last Saturday session together.
 
 **When:** [DATE] at [TIME]
 **Where:** Zoom
@@ -550,7 +550,7 @@ Ansie
 
 Hi mama,
 
-Three weeks. Nine content emails. Three Friday sessions. A lot of information, a lot of real talk, and hopefully a lot less fear.
+Three weeks. Nine content emails. Three Saturday sessions. A lot of information, a lot of real talk, and hopefully a lot less fear.
 
 I want you to know something: you are more ready than you think.
 
